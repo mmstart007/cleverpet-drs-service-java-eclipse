@@ -1,0 +1,7 @@
+<queue-entries>
+  <queue>
+    <name>cloud</name>
+    <rate>1/s</rate>
+    <target>cloud</target>
+  </queue>
+</queue-entries>

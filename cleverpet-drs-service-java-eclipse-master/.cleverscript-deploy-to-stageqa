@@ -1,0 +1,2 @@
+#!/bin/sh -ex
+appcfg.sh -A dev-erpetcloud -M cloud -V 1 update war

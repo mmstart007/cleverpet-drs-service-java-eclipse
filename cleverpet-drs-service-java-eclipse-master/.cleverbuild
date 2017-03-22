@@ -1,0 +1,5 @@
+#!/bin/sh -ex
+echo ${CLEVERBUILD_NUMBER?} > src/cleverbuild_number
+mkdir -p war/WEB-INF/classes
+rsync -av src/ war/WEB-INF/classes/ --exclude \*.java
+javac -classpath /usr/share/java/servlet-api-2.5.jar:war/WEB-INF/lib/\* $(find src -name \*.java) -d war/WEB-INF/classes
